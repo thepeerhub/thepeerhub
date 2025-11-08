@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Peer Hub - Connection & Growth</title>
+<style>
+:root{--bg-primary:#fff;--bg-secondary:#f8f9fa;--bg-card:#fff;--text-primary:#333;--text-secondary:#666;--text-light:#888;--border-color:#e0e0e0;--gradient-start:#667eea;--gradient-end:#764ba2;--shadow:rgba(0,0,0,0.1);--shadow-hover:rgba(0,0,0,0.15)}[data-theme=dark]{--bg-primary:#1a1a2e;--bg-secondary:#16213e;--bg-card:#0f3460;--text-primary:#e4e4e4;--text-secondary:#b4b4b4;--text-light:#888;--border-color:#2a2a4a;--shadow:rgba(0,0,0,0.3);--shadow-hover:rgba(0,0,0,0.5)}*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;line-height:1.6;color:var(--text-primary);background:var(--bg-primary);transition:background .3s ease,color .3s ease}header{background:linear-gradient(135deg,var(--gradient-start) 0%,var(--gradient-end) 100%);color:#fff;padding:1.5rem 0;box-shadow:0 2px 10px var(--shadow);position:sticky;top:0;z-index:100}nav{max-width:1200px;margin:0 auto;padding:0 2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}.logo{font-size:1.8rem;font-weight:700}.nav-right{display:flex;align-items:center;gap:2rem;flex-wrap:wrap}.nav-links{display:flex;gap:1.5rem;list-style:none;flex-wrap:wrap}.nav-links a{color:#fff;text-decoration:none;font-size:.95rem;transition:opacity .3s}.nav-links a:hover{opacity:.8}.theme-toggle{background:rgba(255,255,255,0.2);border:none;color:#fff;padding:.5rem 1rem;border-radius:20px;cursor:pointer;font-size:1.2rem;transition:background .3s}.theme-toggle:hover{background:rgba(255,255,255,0.3)}.hero{background:linear-gradient(135deg,var(--gradient-start) 0%,var(--gradient-end) 100%);color:#fff;text-align:center;padding:4rem 2rem}.hero h1{font-size:2.5rem;margin-bottom:1rem}.hero p{font-size:1.2rem;max-width:600px;margin:0 auto 2rem;opacity:.95}.cta-button{background:#fff;color:var(--gradient-start);padding:1rem 2rem;border:none;border-radius:50px;font-size:1.1rem;font-weight:700;cursor:pointer;transition:transform .3s,box-shadow .3s;text-decoration:none;display:inline-block}.cta-button:hover{transform:translateY(-2px);box-shadow:0 5px 20px rgba(0,0,0,0.2)}.free-consultation{background:var(--bg-secondary);padding:3rem 2rem;text-align:center}.free-box{max-width:800px;margin:0 auto;background:linear-gradient(135deg,#28a745 0%,#20c997 100%);padding:2rem;border-radius:15px;color:#fff}.free-box h2{font-size:2rem;margin-bottom:1rem}.container{max-width:1200px;margin:0 auto;padding:4rem 2rem}.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;margin-top:2rem}.service-card{background:var(--bg-card);padding:2rem;border-radius:10px;box-shadow:0 5px 15px var(--shadow);transition:transform .3s,box-shadow .3s}.service-card:hover{transform:translateY(-5px);box-shadow:0 10px 25px var(--shadow-hover)}.service-icon{font-size:3rem;margin-bottom:1rem}.service-card h3{color:var(--gradient-start);margin-bottom:1rem;font-size:1.5rem}.service-card ul{list-style:none;margin-top:1rem}.service-card li{padding:.5rem 0;padding-left:1.5rem;position:relative;color:var(--text-secondary)}.service-card li:before{content:"✓";position:absolute;left:0;color:var(--gradient-start);font-weight:700}.section-title{text-align:center;font-size:2rem;color:var(--text-primary);margin-bottom:1rem}.section-subtitle{text-align:center;color:var(--text-secondary);margin-bottom:3rem;font-size:1.1rem}.about{background:var(--bg-secondary);padding:4rem 2rem}.about-content{max-width:800px;margin:0 auto;text-align:center}.contact{background:linear-gradient(135deg,var(--gradient-start) 0%,var(--gradient-end) 100%);color:#fff;padding:4rem 2rem;text-align:center}.contact-form{max-width:600px;margin:2rem auto;display:flex;flex-direction:column;gap:1rem}.contact-form input,.contact-form textarea,.contact-form select{padding:1rem;border:none;border-radius:5px;font-size:1rem;font-family:inherit}.contact-form textarea{min-height:150px;resize:vertical}.submit-button{background:#fff;color:var(--gradient-start);padding:1rem 2rem;border:none;border-radius:50px;font-size:1.1rem;font-weight:700;cursor:pointer;transition:transform .3s}.submit-button:hover{transform:translateY(-2px)}footer{background:#333;color:#fff;text-align:center;padding:2rem}.pricing-toggle{display:flex;justify-content:center;gap:1rem;margin-bottom:3rem;flex-wrap:wrap}.toggle-btn{background:var(--bg-card);border:2px solid var(--gradient-start);color:var(--gradient-start);padding:.75rem 2rem;border-radius:50px;font-size:1rem;font-weight:600;cursor:pointer;transition:all .3s}.toggle-btn:hover{background:var(--bg-secondary)}.toggle-btn.active{background:var(--gradient-start);color:#fff}.pricing-content{display:none}.pricing-content.active{display:block;animation:fadeIn .5s}@keyframes fadeIn{from{opacity:0}to{opacity:1}}.pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;max-width:1000px;margin:0 auto}.membership-grid{grid-template-columns:repeat(auto-fit,minmax(320px,1fr));max-width:800px}.pricing-card{background:var(--bg-card);padding:2rem;border-radius:15px;box-shadow:0 5px 20px var(--shadow);text-align:center;transition:transform .3s,box-shadow .3s;position:relative}.pricing-card:hover{transform:translateY(-5px);box-shadow:0 10px 30px var(--shadow-hover)}.pricing-card.featured{border:3px solid var(--gradient-start)}.popular-badge{background:linear-gradient(135deg,var(--gradient-start) 0%,var(--gradient-end) 100%);color:#fff;padding:.5rem 1rem;border-radius:20px;font-size:.85rem;font-weight:700;position:absolute;top:-15px;left:50%;transform:translateX(-50%)}.pricing-card h3{color:var(--text-primary);margin:1rem 0;font-size:1.5rem}.price{font-size:3rem;font-weight:700;color:var(--gradient-start);margin:1rem 0}.price span{font-size:1.2rem;color:var(--text-secondary)}.price-note{color:var(--text-light);font-size:.9rem;margin-bottom:1.5rem}.price-features{list-style:none;margin:1.5rem 0;text-align:left}.price-features li{padding:.75rem 0;padding-left:1.5rem;position:relative;color:var(--text-secondary)}.price-features li:before{content:"✓";position:absolute;left:0;color:var(--gradient-start);font-weight:700;font-size:1.2rem}.price-button{background:linear-gradient(135deg,var(--gradient-start) 0%,var(--gradient-end) 100%);color:#fff;border:none;padding:1rem 2rem;border-radius:50px;font-size:1rem;font-weight:700;cursor:pointer;transition:transform .3s,box-shadow .3s;width:100%}.price-button:hover{transform:translateY(-2px);box-shadow:0 5px 15px rgba(102,126,234,0.4)}.payment-note{text-align:center;margin-top:3rem;padding:1.5rem;background:var(--bg-secondary);border-radius:10px}.payment-note p{color:var(--text-secondary);font-size:.95rem}.blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(350px,1fr));gap:2rem;margin-top:2rem}.blog-post{background:var(--bg-card);border-radius:10px;overflow:hidden;box-shadow:0 5px 15px var(--shadow);transition:transform .3s}.blog-post:hover{transform:translateY(-5px)}.blog-image{width:100%;height:200px;background:linear-gradient(135deg,var(--gradient-start) 0%,var(--gradient-end) 100%);display:flex;align-items:center;justify-content:center;font-size:4rem}.blog-content{padding:1.5rem}.blog-date{color:var(--text-light);font-size:.9rem;margin-bottom:.5rem}.blog-post h3{color:var(--text-primary);margin-bottom:1rem}.blog-post p{color:var(--text-secondary)}.application-benefits{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;margin:2rem 0}.benefit-card{background:var(--bg-card);padding:1.5rem;border-radius:10px;text-align:center;box-shadow:0 3px 10px var(--shadow)}.benefit-icon{font-size:3rem;margin-bottom:1rem}@media (max-width:768px){.nav-links{gap:.5rem;font-size:.85rem}.hero h1{font-size:2rem}.services{grid-template-columns:1fr}.blog-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+<nav>
+<div class="logo">🤝 The Peer Hub</div>
+<div class="nav-right">
+<ul class="nav-links">
+<li><a href="#services">Services</a></li>
+<li><a href="#pricing">Pricing</a></li>
+<li><a href="#resource-nav">Resources</a></li>
+<li><a href="#blog">Blog</a></li>
+<li><a href="#join">Join Team</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+<button class="theme-toggle" onclick="toggleTheme()" id="themeToggle">🌙</button>
+</div>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Welcome to Your Support Journey</h1>
+<p>Connecting individuals through compassionate peer support, meaningful group sessions, and enriching book clubs</p>
+<a href="#free" class="cta-button">Start with Free 15-Minute Consultation</a>
+</section>
+
+<section id="free" class="free-consultation">
+<div class="free-box">
+<h2>🎁 Free 15-Minute Consultation</h2>
+<p style="font-size:1.1rem;margin-bottom:1.5rem">Not sure if we're the right fit? Start with a complimentary 15-minute consultation! Meet your peer support specialist, discuss your goals, and see if our approach feels right for you.</p>
+<p style="font-size:.95rem;opacity:.9">No commitment required • No credit card needed • Zero pressure</p>
+<button class="cta-button" style="margin-top:1.5rem" onclick="alert('Contact us to schedule your free consultation!')">Schedule Free Consultation</button>
+</div>
+</section>
+
+<section id="services" class="container">
+<h2 class="section-title">Our Services</h2>
+<p class="section-subtitle">Discover the support that fits your needs</p>
+<div class="services">
+<div class="service-card">
+<div class="service-icon">👤</div>
+<h3>One-on-One Peer Support</h3>
+<p>Personalized support sessions where you can share your experiences in a safe, confidential environment.</p>
+<ul>
+<li>Individual attention</li>
+<li>Flexible scheduling</li>
+<li>Non-judgmental space</li>
+<li>Goal-oriented approach</li>
+</ul>
+</div>
+<div class="service-card">
+<div class="service-icon">👥</div>
+<h3>Group Sessions</h3>
+<p>Connect with others who share similar experiences through our facilitated group support sessions.</p>
+<ul>
+<li>Weekly meetings</li>
+<li>Shared experiences</li>
+<li>Community building</li>
+<li>Peer-led discussions</li>
+</ul>
+</div>
+<div class="service-card">
+<div class="service-icon">🌟</div>
+<h3>WRAP Groups</h3>
+<p>Wellness Recovery Action Plan groups to help you create your personalized wellness toolbox.</p>
+<ul>
+<li>Self-designed wellness tools</li>
+<li>Trigger identification</li>
+<li>Crisis planning</li>
+<li>Peer-facilitated support</li>
+</ul>
+</div>
+<div class="service-card">
+<div class="service-icon">📝</div>
+<h3>Workbook Groups</h3>
+<p>Structured group sessions working through evidence-based workbooks for skill development.</p>
+<ul>
+<li>Guided exercises</li>
+<li>Group discussions</li>
+<li>Practical skills</li>
+<li>Homework support</li>
+</ul>
+</div>
+<div class="service-card">
+<div class="service-icon">📚</div>
+<h3>Book Clubs</h3>
+<p>Explore themes of growth, healing, and wellness through our monthly book club gatherings.</p>
+<ul>
+<li>Monthly meetings</li>
+<li>Curated selections</li>
+<li>Thoughtful discussions</li>
+<li>Personal insights</li>
+</ul>
+</div>
+<div class="service-card">
+<div class="service-icon">👨‍👩‍👧‍👦</div>
+<h3>Family Support</h3>
+<p>Comprehensive support for families navigating challenges together.</p>
+<ul>
+<li>Family sessions</li>
+<li>Communication strategies</li>
+<li>Coping techniques</li>
+<li>Supportive environment</li>
+</ul>
+</div>
+<div class="service-card">
+<div class="service-icon">🎓</div>
+<h3>Family Education</h3>
+<p>Educational programs designed to empower families with knowledge and practical tools.</p>
+<ul>
+<li>Workshops & seminars</li>
+<li>Resource materials</li>
+<li>Skill-building activities</li>
+<li>Q&A sessions</li>
+</ul>
+</div>
+<div class="service-card">
+<div class="service-icon">🧠</div>
+<h3>Psychoeducation</h3>
+<p>Learn about mental health, wellness, and recovery through evidence-based sessions.</p>
+<ul>
+<li>Mental health topics</li>
+<li>Symptom management</li>
+<li>Treatment options</li>
+<li>Self-care strategies</li>
+</ul>
+</div>
+<div class="service-card">
+<div class="service-icon">🗺️</div>
+<h3>Resource Navigation</h3>
+<p>Get personalized help connecting to community resources, benefits, and support services.</p>
+<ul>
+<li>Benefits application assistance</li>
+<li>Healthcare navigation</li>
+<li>Housing & food resources</li>
+<li>Financial support programs</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="resource-nav" class="container" style="background:var(--bg-secondary);padding:4rem 2rem">
+<h2 class="section-title">Resource Navigation</h2>
+<p class="section-subtitle">We help you connect to the support and benefits you need</p>
+<div class="free-box" style="margin:2rem auto;max-width:900px">
+<h3 style="margin-bottom:1rem">📍 Free Resource Navigation Support</h3>
+<p style="font-size:1.05rem">Navigating benefits and community resources can be overwhelming. We're here to help you understand what's available and guide you through the application process.</p>
+</div>
+</section>
+
+<section id="pricing" class="container">
+<h2 class="section-title">Pricing & Membership</h2>
+<p class="section-subtitle">Affordable support options designed to fit your budget</p>
+<div class="pricing-toggle">
+<button class="toggle-btn active" onclick="showPricing('individual')">Individual Sessions</button>
+<button class="toggle-btn" onclick="showPricing('membership')">Monthly Membership</button>
+</div>
+<div id="individual-pricing" class="pricing-content active">
+<div class="pricing-grid">
+<div class="pricing-card">
+<h3>One-on-One Support</h3>
+<div class="price">$25<span>/session</span></div>
+<p class="price-note">50-minute session</p>
+<ul class="price-features">
+<li>Individual peer support</li>
+<li>Flexible scheduling</li>
+<li>Virtual or in-person</li>
+<li>No commitment required</li>
+</ul>
+<button class="price-button" onclick="alert('Contact us to book your session!')">Book Session</button>
+</div>
+<div class="pricing-card">
+<h3>Group Sessions</h3>
+<div class="price">$15<span>/session</span></div>
+<p class="price-note">90-minute group session</p>
+<ul class="price-features">
+<li>WRAP groups</li>
+<li>Workbook groups</li>
+<li>General support groups</li>
+<li>Community connection</li>
+</ul>
+<button class="price-button" onclick="alert('Contact us to join a group!')">Join Group</button>
+</div>
+<div class="pricing-card">
+<h3>Book Clubs</h3>
+<div class="price">$10<span>/meeting</span></div>
+<p class="price-note">Monthly gatherings</p>
+<ul class="price-features">
+<li>Monthly book discussions</li>
+<li>Curated reading lists</li>
+<li>Thoughtful conversations</li>
+<li>Materials included</li>
+</ul>
+<button class="price-button" onclick="alert('Contact us to join our book club!')">Join Book Club</button>
+</div>
+</div>
+</div>
+<div id="membership-pricing" class="pricing-content">
+<div class="pricing-grid membership-grid">
+<div class="pricing-card featured">
+<div class="popular-badge">Most Popular</div>
+<h3>Basic Membership</h3>
+<div class="price">$75<span>/month</span></div>
+<p class="price-note">Best for group participants</p>
+<ul class="price-features">
+<li>Unlimited group sessions</li>
+<li>All book club meetings</li>
+<li>Access to all resources</li>
+<li>Priority scheduling</li>
+<li>Community forum access</li>
+</ul>
+<button class="price-button" onclick="alert('Contact us to get started!')">Get Started</button>
+</div>
+<div class="pricing-card featured">
+<div class="popular-badge">Best Value</div>
+<h3>Premium Membership</h3>
+<div class="price">$150<span>/month</span></div>
+<p class="price-note">Comprehensive support package</p>
+<ul class="price-features">
+<li>Everything in Basic</li>
+<li>4 individual sessions/month</li>
+<li>Family support sessions</li>
+<li>Psychoeducation workshops</li>
+<li>24/7 text support line</li>
+<li>Discounted additional sessions</li>
+</ul>
+<button class="price-button" onclick="alert('Contact us to get started!')">Get Started</button>
+</div>
+</div>
+</div>
+<div class="payment-note">
+<p>💳 We accept all major credit cards, HSA/FSA cards, and offer sliding scale options based on need.</p>
+</div>
+</section>
+
+<section id="blog" class="container">
+<h2 class="section-title">Blog & Resources</h2>
+<p class="section-subtitle">Insights, tips, and stories from our community</p>
+<div class="blog-grid">
+<div class="blog-post">
+<div class="blog-image">🌱</div>
+<div class="blog-content">
+<div class="blog-date">November 1, 2025</div>
+<h3>5 Ways to Build Your Wellness Toolbox</h3>
+<p>Discover practical strategies to create a personalized set of wellness tools that work for you...</p>
+</div>
+</div>
+<div class="blog-post">
+<div class="blog-image">💪</div>
+<div class="blog-content">
+<div class="blog-date">October 28, 2025</div>
+<h3>The Power of Peer Support: Why It Works</h3>
+<p>Understanding the unique benefits of connecting with others who truly understand your journey...</p>
+</div>
+</div>
+<div class="blog-post">
+<div class="blog-image">🧘</div>
+<div class="blog-content">
+<div class="blog-date">October 25, 2025</div>
+<h3>Self-Care Isn't Selfish: A Guide</h3>
+<p>Learn why taking care of yourself is essential and how to build sustainable self-care practices...</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="join" style="background:var(--bg-secondary);padding:4rem 2rem">
+<div class="container">
+<h2 class="section-title">Join Our Team as a Peer Support Specialist</h2>
+<p class="section-subtitle">Help others while building a meaningful independent practice</p>
+<div class="application-benefits">
+<div class="benefit-card">
+<div class="benefit-icon">💼</div>
+<h4>Flexible Schedule</h4>
+<p>Set your own hours and choose your availability</p>
+</div>
+<div class="benefit-card">
+<div class="benefit-icon">💰</div>
+<h4>Competitive Pay</h4>
+<p>Earn 70% of session fees as an independent contractor</p>
+</div>
+<div class="benefit-card">
+<div class="benefit-icon">🎓</div>
+<h4>Training & Support</h4>
+<p>Access ongoing professional development and supervision</p>
+</div>
+<div class="benefit-card">
+<div class="benefit-icon">🤝</div>
+<h4>Community</h4>
+<p>Join a supportive team of dedicated peer specialists</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2 class="section-title" style="color:#fff">Get In Touch</h2>
+<p style="margin-bottom:2rem;font-size:1.1rem">Ready to begin? Reach out to learn more about our services or schedule your first session.</p>
+<form class="contact-form" onsubmit="handleSubmit(event)">
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<input type="tel" placeholder="Phone Number (optional)">
+<textarea placeholder="Tell us what you're looking for..." required></textarea>
+<button type="submit" class="submit-button">Send Message</button>
+</form>
+</section>
+
+<footer>
+<p>&copy; 2025 The Peer Hub. All rights reserved.</p>
+<p style="margin-top:.5rem;font-size:.9rem">Providing compassionate support and building community.</p>
+</footer>
+
+<script>
+function toggleTheme(){const e=document.documentElement,t="dark"===e.getAttribute("data-theme")?"light":"dark";e.setAttribute("data-theme",t),document.getElementById("themeToggle").textContent="dark"===t?"☀️":"🌙",localStorage.setItem("theme",t)}function handleSubmit(e){e.preventDefault(),alert("Thank you for reaching out! We will get back to you soon."),e.target.reset()}function showPricing(e){document.querySelectorAll(".pricing-content").forEach(e=>e.classList.remove("active")),document.querySelectorAll(".toggle-btn").forEach(e=>e.classList.remove("active")),document.getElementById(e+"-pricing").classList.add("active"),event.target.classList.add("active")}document.addEventListener("DOMContentLoaded",function(){const e=localStorage.getItem("theme")||"light";document.documentElement.setAttribute("data-theme",e),document.getElementById("themeToggle").textContent="dark"===e?"☀️":"🌙"}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();const t=document.querySelector(this.getAttribute("href"));t&&t.scrollIntoView({behavior:"smooth"})})});
+</script>
+</body>
+</html>
